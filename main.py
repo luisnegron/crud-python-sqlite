@@ -1,4 +1,5 @@
 import sqlite3
+import os
 import functions
 
 # Connect to sqlite database
@@ -41,15 +42,19 @@ while True:
 	
 	option = input("inserta un numero valor >> ")
 	if option=="1":
-		functions.insert()		
+		functions.insert()
+		os.system('clear')		
 	elif option=="2":
 		functions.retrieve()
 	elif option=="3":
-		functions.modify()	
+		functions.modify()
+		os.system('clear')	
 	elif option=="4":
 		functions.erase()
+		os.system('clear')
 	elif option=="5":
 		break
+		os.system('clear')
 	else:
 		print ("")
 		input("No has pulsado ninguna opción correcta...\npulsa una tecla para continuar")
